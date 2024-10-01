@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilits</title>
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+</script>
+<style>
+    @keyframes progress {
+        0%{
+            width: 0%;
+            background-color: red;
+        }
+        25%{
+            width: 25%;
+            background-color: orange;
+        }
+        50%{
+            width: 50%;
+            background-color: yellow;
+        }
+        75%{
+            width: 75%;
+            background-color: yellowgreen;
+        }
+        100%{
+            width: 100%;
+            background-color: green;
+        }
+    }
+    .progress-bar {
+        animation-name: progress;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        transition-timing-function: linear;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <button type="button" class="btn btn-success">Button</button>
+            <button type="button" class="btn btn-danger">Button</button>     
+            <button type="button" class="btn btn-warning">Button</button>     
+            <button type="button" class="btn btn-primary">Button</button>     
+            <button type="button" class="btn btn-secondary">Button</button>     
+            <button type="button" class="btn btn-dark">Button</button>            
+        </div>
+    </div>
+    <div class="container">
+        <span class="badge badge-success">Badge</span>
+        <span class="badge badge-danger">Badge</span>
+        <span class="badge badge-warning">Badge</span>
+        <span class="badge badge-primary">Badge</span>
+        <span class="badge badge-secondary">Badge</span>
+        <span class="badge badge-dark">Badge</span>
+    </div>
+    <div class="container">
+        <h2>Basic progress bar</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated">
+              PROGRESS
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
